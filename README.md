@@ -12,14 +12,14 @@ After loading the data, analytical **SQL queries** were written to answer questi
 
 ### Data Sources
 
-1. **Local CSV Files**
+1. **Local CSV Files**       Download Link: https://grouplens.org/datasets/movielens/latest/
 
    * `movies.csv` – contains movie IDs, titles, and genres.
    * `ratings.csv` – contains user ratings with timestamps.
 2. **External API**
 
    * **OMDb API** – used to fetch additional movie details like director, plot, and box office.
-   * Requires a **free API key**.
+   * Requires a **free API key**.    API Website: http://www.omdbapi.com/
    * Implemented a **JSON cache** to prevent repeated API calls and to handle request limits.
 
 ---
@@ -242,7 +242,7 @@ Working on this ETL project was a learning experience, and i faced multiple chal
 ## Submission
 
 Prepared and executed by:
-**Your Name: Sameena**
+**Name: Sameena**
 
 ---
 
