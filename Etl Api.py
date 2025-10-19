@@ -16,11 +16,11 @@ CACHE_FILE = r"D:\Sameena Project\tswork company\ml-latest-small\ml-latest-small
 DB_CONFIG = {
     'host': 'localhost',
     'user': 'root',
-    'password': 'Sameena@123',
+    'password': 'Sameennnnnnnna123333333',
     'database': 'movie_db'
 }
 
-OMDB_API_KEY = "9e3bc3ff"  # replace with your key
+OMDB_API_KEY = "9e3bc3fxxxxxxxxxxxxxx"  # put ur key here
 
 # -----------------------------
 # STEP 1: EXTRACT
@@ -157,3 +157,4 @@ cursor.close()
 conn.close()
 
 print("\nETL finished successfully! All movies including API/cache data loaded into MySQL.")
+
