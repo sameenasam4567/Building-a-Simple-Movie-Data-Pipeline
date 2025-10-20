@@ -1,4 +1,4 @@
--- schema.sql (clean, run as one script)
+-- schema.sql Sameena
 
 DROP DATABASE IF EXISTS movie_db;
 CREATE DATABASE IF NOT EXISTS movie_db;
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS movies (
     plot TEXT,
     box_office VARCHAR(50),
     year INT
-) ENGINE=InnoDB;
+);
 
 CREATE TABLE IF NOT EXISTS ratings (
     rating_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -24,14 +24,8 @@ CREATE TABLE IF NOT EXISTS ratings (
     rating FLOAT,
     timestamp BIGINT,
     FOREIGN KEY (movie_id) REFERENCES movies(movie_id) ON DELETE CASCADE
-) ENGINE=InnoDB;
+);
 
 
 
-'''Each statement ends with ;. No parser complaints.
 
-ENGINE=InnoDB ensures foreign key constraints are supported.
-
-movie_id is auto-increment so inserts don’t have to supply IDs.
-
-movie_id in ratings is NOT NULL — better foreign-key hygiene.'';
